@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lista de Compras</string>
+    <string name="descricao_app">Por favor, insira um item na lista</string>
+    <string name="nome_prod">Nome do Produto</string>
+    <string name="quantidade_prod">Quantidade</string>
+    <string name="marca_prod">Marca</string>
+    <string name="btn_cadastrar">Adicionar um novo produto</string>
+
+
+</resources>

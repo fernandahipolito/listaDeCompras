@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/teste"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:behavior_skipCollapsed= "true"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_baseline_remove_24"/>
+
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48.6dp"
+                    android:textSize="24sp"
+                    android:text="Editar tarefa"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Altere dados de uma tarefa existente"
+            />
+
+            <EditText
+                    android:id="@+id/edtTitleEdt"
+                    android:layout_width="328dp"
+                    android:layout_height="56dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="28dp"
+                    android:textSize="16sp"
+                    android:hint="Título da tarefa"/>
+
+
+            <EditText
+                    android:id="@+id/edtDescriptionEdt"
+                    android:layout_width="328dp"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="59dp"
+                    android:background="@color/gray"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:hint="Descrição da Tarefa"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Opcional"
+            />
+
+            <Button
+                    android:id="@+id/btnSalvarEdit"
+                    android:layout_marginTop="200.5dp"
+                    android:layout_marginBottom="49dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/radius_bottom"
+                    android:textColor="@color/colorApp"
+                    android:textSize="18dp"
+                    android:textAllCaps="false"
+                    android:text="Salvar"
+            />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
